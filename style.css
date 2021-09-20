@@ -17,7 +17,7 @@ h1 {
 
 span {
   font-size: 1.1em;
-  color: #1feb1f;
+  color: #fdfdfd;
   font-weight: 800;
 }
 
@@ -34,6 +34,11 @@ video {
 
 .navbar .nav-link {
   color: #fff !important;
+  padding: .5em .7em;
+}
+
+.navbar .nav-link:hover {
+  background-color: #65e007 !important;
 }
 
 .mask {
@@ -99,6 +104,7 @@ video {
 
 .logo {
   width: 150px;
+  height: 83px;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -113,6 +119,21 @@ button span {
 }
 
 .dropdown-menu li {
+  border-radius: 0 !important;
   border-bottom: 1px solid #e4e4e4;
+}
+
+.dropdown-menu li:hover a {
+  border-radius: 0 !important;
+  color: white !important;
+  background-color: #65e007 !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+button {
+  border-radius: 0 !important;
 }
 /*# sourceMappingURL=style.css.map */
