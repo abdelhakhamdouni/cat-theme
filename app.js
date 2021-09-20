@@ -10,6 +10,8 @@
 //     myvideo.play()
 // } )
 
+AOS.init();
+
 document.querySelectorAll('.dropdown-toggle').forEach(ele =>{
     ele.addEventListener('mouseenter', ()=>{
         ele.parentNode.querySelector('.dropdown-menu').classList.toggle('show')
@@ -31,3 +33,10 @@ document.querySelectorAll('.dropdown-menu').forEach(ele =>{
         this.classList.toggle('show')
     })
 })
+
+$(document).ready(function(){
+    $('.news-carousel').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1
+    });
+  });

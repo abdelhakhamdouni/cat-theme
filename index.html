@@ -6,12 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- SLICK -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -55,98 +62,86 @@
               </li>
             </ul>
           </div>
-        <div class="container bg-dark px-0">
-          <!-- Navbar brand -->
+          <div class="container bg-dark px-0">
+            <!-- Navbar brand -->
 
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse mx-0" id="navbarExample01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  data-mdb-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  LA CAT
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li>
-                    <a class="dropdown-item" href="#">Qui somme nous ?</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Adherez-vous</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Trouver votre syndicat</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" rel="nofollow"
-                  target="_blank">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" rel="nofollow"
-                  target="_blank">Actualités</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">Formation</a>
-              </li>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+              aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse mx-0" id="navbarExample01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    LA CAT
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item" href="#">Qui somme nous ?</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Adherez-vous</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Trouver votre syndicat</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" rel="nofollow" target="_blank">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" rel="nofollow" target="_blank">Actualités</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">Formation</a>
+                </li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  data-mdb-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Devenir militant
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li>
-                    <a class="dropdown-item" href="#">Adhérer à la CAT</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Créer un syndicat</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Créer une section syndicale</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">Contactez-nous</a>
-              </li>
-            </ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Devenir militant
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item" href="#">Adhérer à la CAT</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Créer un syndicat</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Créer une section syndicale</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">Contactez-nous</a>
+                </li>
+              </ul>
 
-            <ul class="navbar-nav list-inline">
-              <!-- Icons -->
-              <li class="nav-item">
-                <a class="nav-link" href="#" rel="nofollow" target="_blank">
-                  <i class="fa fa-envelope"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" rel="nofollow" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" rel="nofollow" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
+              <ul class="navbar-nav list-inline">
+                <!-- Icons -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#" rel="nofollow" target="_blank">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" rel="nofollow" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" rel="nofollow" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
 
-            </ul>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </nav>
     <!-- Navbar -->
@@ -172,10 +167,112 @@
     <!-- Carousel wrapper -->
   </header>
   <!--Main Navigation-->
+
+  <div class="container">
+    <section class="section news" data-aos="fade-up" data-aos-duration="1500">
+      <div class="section__title text-uppercase">
+        les DERNIÈRES NEWS
+      </div>
+      <div class="news-carousel">
+        <div class="news">
+          <div class="image">
+            <img class="img-fluid w-100" src="https://picsum.photos/id/237/200/300" alt="">
+          </div>
+          <div class="news-overlay">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus quia magnam ratione aliquam sapiente molestiae quis voluptate et deserunt nam earum cumque excepturi, iste minima, eligendi asperiores, rerum dicta.</p>
+            <span  class="date">Le 19 juin 2021</span>            
+            <span  class="date">Par: CAT France</span>
+            <button class="btn mt-3 btn-warning">Lire l'article</button>
+          </div>
+        </div>
+        <div class="news">
+          <div class="image">
+            <img class="img-fluid w-100" src="https://picsum.photos/id/237/200/300" alt="">
+          </div>
+          <div class="news-overlay">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus quia magnam ratione aliquam sapiente molestiae quis voluptate et deserunt nam earum cumque excepturi, iste minima, eligendi asperiores, rerum dicta.</p>
+            <span  class="date">Le 19 juin 2021</span>            
+            <span  class="date">Par: CAT France</span>
+            <button class="btn mt-3 btn-warning">Lire l'article</button>
+          </div>
+        </div>
+        <div class="news">
+          <div class="image">
+            <img class="img-fluid w-100" src="https://picsum.photos/id/237/200/300" alt="">
+          </div>
+          <div class="news-overlay">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus quia magnam ratione aliquam sapiente molestiae quis voluptate et deserunt nam earum cumque excepturi, iste minima, eligendi asperiores, rerum dicta.</p>
+            <span  class="date">Le 19 juin 2021</span>            
+            <span  class="date">Par: CAT France</span>
+            <button class="btn mt-3 btn-warning">Lire l'article</button>
+          </div>
+        </div>
+        <div class="news">
+          <div class="image">
+            <img class="img-fluid w-100" src="https://picsum.photos/id/237/200/300" alt="">
+          </div>
+          <div class="news-overlay">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, eos.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus quia magnam ratione aliquam sapiente molestiae quis voluptate et deserunt nam earum cumque excepturi, iste minima, eligendi asperiores, rerum dicta.</p>
+            <span  class="date">Le 19 juin 2021</span>            
+            <span  class="date">Par: CAT France</span>
+            <button class="btn mt-3 btn-warning">Lire l'article</button>
+          </div>
+        </div>
+        <div class="news">
+          <div class="image">
+            <img class="img-fluid w-100" src="https://picsum.photos/id/237/200/300" alt="">
+          </div>
+          <div class="news-overlay">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam impedit deleniti sapiente, incidunt repudiandae a nihil illo quos repellat labore molestiae architecto reiciendis unde quas, illum rerum excepturi totam mollitia.</p>
+            <span  class="date">Le 19 juin 2021</span>            
+            <span  class="date">Par: CAT France</span>
+            <button class="btn mt-3 btn-warning">Lire l'article</button>
+          </div>
+        </div>
+        <div class="news">
+          <div class="image">
+            <img class="img-fluid w-100" src="https://picsum.photos/id/237/200/300" alt="">
+          </div>
+          <div class="news-overlay">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus quia magnam ratione aliquam sapiente molestiae quis voluptate et deserunt nam earum cumque excepturi, iste minima, eligendi asperiores, rerum dicta.</p>
+            <span  class="date">Le 19 juin 2021</span>            
+            <span  class="date">Par: CAT France</span>
+            <button class="btn mt-3 btn-warning">Lire l'article</button>
+          </div>
+        </div>
+        <div class="news">
+          <div class="image">
+            <img class="img-fluid w-100" src="https://picsum.photos/id/237/200/300" alt="">
+          </div>
+          <div class="news-overlay">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus quia magnam ratione aliquam sapiente molestiae quis voluptate et deserunt nam earum cumque excepturi, iste minima, eligendi asperiores, rerum dicta.</p>
+            <span  class="date">Le 19 juin 2021</span>            
+            <span  class="date">Par: CAT France</span>
+            <button class="btn mt-3 btn-warning">Lire l'article</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
   <!--Footer-->
 
+  <!-- SLICK -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="app.js"></script>
 </body>
 
