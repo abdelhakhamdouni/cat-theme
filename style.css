@@ -506,4 +506,74 @@ button span {
   padding: 0;
   margin: 0;
 }
+
+.adhesions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.adhesion {
+  -webkit-box-shadow: 0 0 15px lightgray;
+          box-shadow: 0 0 15px lightgray;
+  padding: 2em;
+  position: relative;
+  overflow: hidden;
+  margin: 1em;
+  width: 30%;
+  height: 100% !important;
+}
+
+.adhesion .content .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .15;
+  z-index: -1;
+}
+
+.adhesion .content .image span {
+  font-size: 12em;
+}
+
+.adhesion .content .content-body ul li {
+  margin-top: 1em;
+}
+
+.adhesion .content .content-body ul li a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-weight: 600;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adhesion .content .content-body ul li a span {
+  margin-right: 1em;
+}
+
+.adhesion .content .content-body ul li:hover a {
+  -webkit-transform: translateX(5px) scale(1.1);
+          transform: translateX(5px) scale(1.1);
+  color: #187e18 !important;
+}
+
+@media (max-width: 990px) {
+  .adhesion {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
