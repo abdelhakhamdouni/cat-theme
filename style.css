@@ -323,13 +323,18 @@ button {
             flex-direction: column;
     top: 0;
     z-index: 99999;
-    background-color: var(--mdb-dark);
+    background-color: var(--mdb-primary);
     height: 100vh;
     width: 100vw;
     padding: 1em;
+    -webkit-transition: all .5s;
+    transition: all .5s;
   }
   .navbar__mobile .navbar-nav .nav-link {
     color: white !important;
+  }
+  .navbar__mobile .logo {
+    margin-bottom: 1em;
   }
   .navbar__mobile.navbar-show {
     left: 0;

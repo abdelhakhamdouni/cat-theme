@@ -284,15 +284,19 @@ button{
         display: flex;
         position: absolute;
         flex-direction: column;
-        //left: 100%;
+        //left: -100%;
         top: 0;
         z-index: 99999;
-        background-color: var(--mdb-dark);
+        background-color: var(--mdb-primary);
         height: 100vh;
         width: 100vw;
         padding: 1em;
+        transition: all .5s;
         .navbar-nav .nav-link{
             color: white !important;
+        }
+        .logo{
+            margin-bottom: 1em;
         }
         &.navbar-show{
             left: 0;
