@@ -497,3 +497,12 @@ button span{
     }
 }
 
+.footer{
+    .section{
+        position: relative;
+        .footer-copywrite{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}

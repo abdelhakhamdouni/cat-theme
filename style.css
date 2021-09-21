@@ -596,4 +596,13 @@ button span {
     width: 100%;
   }
 }
+
+.footer .section {
+  position: relative;
+}
+
+.footer .section .footer-copywrite {
+  position: absolute;
+  bottom: 0;
+}
 /*# sourceMappingURL=style.css.map */
