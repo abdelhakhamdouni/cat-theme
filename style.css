@@ -306,7 +306,7 @@ button span {
   display: none;
 }
 
-.navbar__manu_toggler {
+.navbar__manu_open, .navbar__manu_close {
   display: none;
 }
 
@@ -357,8 +357,11 @@ button span {
   }
 }
 
-.services-wrapper {
-  background-color: #d8d8d8;
+.apropos-wrapper {
+  background-color: #f5faaa;
+  color: #1b1b1b;
+  font-size: 1em !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .services {
@@ -377,8 +380,8 @@ button span {
 
 .service {
   border: 1px solid #e4e3e3;
-  -webkit-box-shadow: 0 0 15px #a3a3a3;
-          box-shadow: 0 0 15px #a3a3a3;
+  -webkit-box-shadow: 0 0 75px #ddd;
+          box-shadow: 0 0 75px #ddd;
   position: relative;
   padding: 2.5em 1em 1em;
   background-color: #fff;
@@ -452,25 +455,32 @@ button span {
   border: 1px solid lightgray;
   background-color: #fff;
   height: 150px;
-  width: 150px;
-  padding: 1.5em 2em 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: .5em;
+  margin: 1em;
   -webkit-box-shadow: 3px 5px 10px #8b8b8b;
           box-shadow: 3px 5px 10px #8b8b8b;
   position: relative;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .presence img {
   width: 100px;
+}
+
+.presence:hover {
+  -webkit-box-shadow: 3px 9px 15px #575757;
+          box-shadow: 3px 9px 15px #575757;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .presence:hover .mark_metadata {
@@ -488,6 +498,12 @@ button span {
   border-radius: 5px;
   -webkit-box-shadow: 3px 5px 10px #8b8b8b;
           box-shadow: 3px 5px 10px #8b8b8b;
-  padding: 1em;
+  padding: 0.5em 1em;
+}
+
+.presence .mark_metadata h5 {
+  font-size: .8em;
+  padding: 0;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
