@@ -327,6 +327,10 @@ button span{
         transition: all .5s;
         .navbar-nav .nav-link{
             color: white !important;
+            span{
+                color: white !important;
+
+            }
         }
         .logo{
             margin-bottom: 1em;

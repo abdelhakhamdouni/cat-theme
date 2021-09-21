@@ -372,6 +372,9 @@ button span {
   .navbar__mobile .navbar-nav .nav-link {
     color: white !important;
   }
+  .navbar__mobile .navbar-nav .nav-link span {
+    color: white !important;
+  }
   .navbar__mobile .logo {
     margin-bottom: 1em;
   }
