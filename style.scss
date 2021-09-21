@@ -315,7 +315,7 @@ button span{
     }
     .navbar__mobile{
         display: flex;
-        position: absolute;
+        position: fixed;
         flex-direction: column;
         left: -100%;
         top: 0;
