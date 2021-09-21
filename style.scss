@@ -18,7 +18,20 @@ ul, li {
         color: $green;
     }
 }
+.form-control{
+    border-radius: 0 !important;
+    display: inline;
+}
+.form-group{
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-start;
+}
 
+.form-info{
+    margin-top: 1em;
+    font-size: .7em;
+}
 
 /* Carousel styling */
 #introCarousel,
@@ -483,3 +496,4 @@ button span{
         width: 100%;
     }
 }
+
