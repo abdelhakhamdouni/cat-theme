@@ -3,6 +3,22 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+a {
+  cursor: pointer;
+}
+
+button {
+  border-radius: 0 !important;
+}
+
+ul, li {
+  list-style: none;
+}
+
+ul span, ul i, li span, li i {
+  color: #2a824a;
+}
+
 /* Carousel styling */
 #introCarousel,
 .carousel-inner,
@@ -135,16 +151,9 @@ button span {
   background-color: #65e007 !important;
 }
 
-a {
-  cursor: pointer;
-}
-
-button {
-  border-radius: 0 !important;
-}
-
 .section {
   min-height: 100vh;
+  padding: 5em 0;
 }
 
 .section .section__title {
@@ -155,6 +164,7 @@ button {
   margin: 1.5em 0;
   position: relative;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .section .section__title::after {
@@ -422,5 +432,62 @@ button {
 
 .service .service_body p {
   font-size: .8em;
+}
+
+.apropos {
+  font-size: .8em;
+  line-height: 2em;
+}
+
+.apropos li {
+  font-weight: 600;
+}
+
+.presence-wrapper {
+  background-color: lightgray;
+}
+
+.presence {
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  height: 150px;
+  width: 150px;
+  padding: 1.5em 2em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: .5em;
+  -webkit-box-shadow: 3px 5px 10px #8b8b8b;
+          box-shadow: 3px 5px 10px #8b8b8b;
+  position: relative;
+}
+
+.presence img {
+  width: 100px;
+}
+
+.presence:hover .mark_metadata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.presence .mark_metadata {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 5px 10px #8b8b8b;
+          box-shadow: 3px 5px 10px #8b8b8b;
+  padding: 1em;
 }
 /*# sourceMappingURL=style.css.map */

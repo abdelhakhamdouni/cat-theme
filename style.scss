@@ -4,6 +4,22 @@ $green: #2a824a;
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+a{
+    cursor: pointer;
+}
+button{
+    border-radius: 0 !important;
+}
+
+ul, li {
+    list-style: none;
+    span, i {
+        color: $green;
+    }
+}
+
+
 /* Carousel styling */
 #introCarousel,
 .carousel-inner,
@@ -126,15 +142,11 @@ button span{
     }
 }
 
-a{
-    cursor: pointer;
-}
-button{
-    border-radius: 0 !important;
-}
+
 
 .section{
     min-height: 100vh;
+    padding: 5em 0;
     .section__title{
         text-align: center;
         font-size: 2em;
@@ -143,6 +155,7 @@ button{
         margin: 1.5em 0;
         position: relative;
         display: inline-block;
+        text-transform: uppercase;
         &::after{
             content: "";
             width: 75%;
@@ -358,5 +371,50 @@ button{
         p{
             font-size: .8em;
         }
+    }
+}
+
+.apropos{
+    font-size: .8em;
+    line-height: 2em;
+    li{
+        font-weight: 600;
+    }
+}
+
+.presence-wrapper{
+    background-color: lightgray;
+}
+
+.presence{
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    height: 150px;
+    width: 150px;
+    padding: 1.5em 2em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .5em;
+    box-shadow: 3px 5px 10px rgb(139, 139, 139);
+    position: relative;
+    img{
+        width: 100px;
+    }
+    &:hover{
+        .mark_metadata{
+            display: flex;
+        }
+    }
+    .mark_metadata{
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        top: 100%;
+        left: 0;
+        border-radius: 5px;
+        box-shadow: 3px 5px 10px rgb(139, 139, 139);
+        padding: 1em;
     }
 }
