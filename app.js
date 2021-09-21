@@ -70,6 +70,9 @@ $(document).ready(function(){
     });
   });
 
-  document.querySelector('.navbar__manu_toggler').addEventListener('click', function(){
-      document.querySelector('.navbar__mobile').classList.add('navbar-show')
+  document.querySelector('.navbar__manu_open').addEventListener('click', function(){
+      document.querySelector('.navbar__mobile').classList.toggle('navbar-show')
   })
+  document.querySelector('.navbar__manu_close').addEventListener('click', function(){
+    document.querySelector('.navbar__mobile').classList.toggle('navbar-show')
+})
