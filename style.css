@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(2em, 8vh, 10em) !important;
+  font-size: clamp(2em, 5vh, 10em) !important;
 }
 
 /* Height for devices larger than 576px */
@@ -56,7 +56,7 @@ video {
 }
 
 .mask p {
-  font-size: clamp(1em, 2.5vh, 3em);
+  font-size: clamp(1em, 2vh, 3em);
   margin: .5em 0;
   line-height: 1em;
   color: white;
@@ -77,6 +77,7 @@ video {
     z-index: 2000;
     top: 0;
     width: 100vw;
+    display: none !important;
     background-color: white;
   }
   .navbar .navbar-toggler {
@@ -177,21 +178,57 @@ button {
   border-radius: 0 !important;
 }
 
-.news {
+@media (max-width: 600px) {
+  .slick-arrow {
+    display: none !important;
+  }
+  .news__content {
+    height: 72vh !important;
+  }
+}
+
+.news__content {
   position: relative;
   margin: .3em;
   overflow: hidden;
+  height: 65vh;
+  border: 1px solid lightgray;
+  -webkit-box-shadow: 0 0 3px #a8a8a8;
+          box-shadow: 0 0 3px #a8a8a8;
 }
 
-.news:hover > .news-overlay {
+.news__content .categorie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .3em .5em;
+  background-color: var(--mdb-warning);
+  color: white;
+  font-weight: 300;
+  font-size: .8em;
+  -webkit-box-shadow: 0 0 15px #5c5c5c;
+          box-shadow: 0 0 15px #5c5c5c;
+}
+
+.news__content .image {
+  height: 100%;
+}
+
+.news__content .image img {
+  height: 100%;
+  -o-object-fit: 100%;
+     object-fit: 100%;
+}
+
+.news__content:hover > .news-overlay {
   height: 65%;
 }
 
-.news:hover > .news-overlay h1, .news:hover > .news-overlay p, .news:hover > .news-overlay button, .news:hover > .news-overlay .date {
+.news__content:hover > .news-overlay h1, .news__content:hover > .news-overlay p, .news__content:hover > .news-overlay button, .news__content:hover > .news-overlay .date {
   display: block;
 }
 
-.news .news-overlay {
+.news__content .news-overlay {
   position: absolute;
   -webkit-transition: height .5s;
   transition: height .5s;
@@ -199,7 +236,7 @@ button {
   right: 0;
   bottom: 0;
   height: 80px;
-  background-color: #155720;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,25 +251,25 @@ button {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 1em;
-  color: white;
+  color: #1f1f1f;
 }
 
-.news .news-overlay::after {
+.news__content .news-overlay::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 50px;
-  width: 100%;
+  width: 110%;
   -webkit-transform-origin: left top;
           transform-origin: left top;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
-  background-color: #155720;
+  background-color: white;
   z-index: 4;
 }
 
-.news .news-overlay h1 {
+.news__content .news-overlay h1 {
   font-size: 1em !important;
   position: relative;
   z-index: 100;
@@ -240,18 +277,63 @@ button {
   font-size: 1.2em;
 }
 
-.news .news-overlay p {
+.news__content .news-overlay p {
   font-size: .8em;
   display: none;
 }
 
-.news .news-overlay .date {
-  display: none;
+.news__content .news-overlay .metadata .date {
   font-size: .7em;
   font-weight: 300;
+  color: #2e2e2e;
 }
 
-.news .news-overlay button {
+.news__content .news-overlay button {
   display: none;
+}
+
+.navbar__mobile {
+  display: none;
+}
+
+.navbar__manu_toggler {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  .navbar__manu_toggler {
+    display: block;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    z-index: 9999;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  .navbar__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+    z-index: 99999;
+    background-color: var(--mdb-dark);
+    height: 100vh;
+    width: 100vw;
+    padding: 1em;
+  }
+  .navbar__mobile .navbar-nav .nav-link {
+    color: white !important;
+  }
+  .navbar__mobile.navbar-show {
+    left: 0;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
