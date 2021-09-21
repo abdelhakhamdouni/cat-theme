@@ -372,7 +372,7 @@ button span {
   .navbar__mobile .navbar-nav .nav-link {
     color: white !important;
   }
-  .navbar__mobile .navbar-nav .nav-link span {
+  .navbar__mobile .navbar-nav .nav-link span, .navbar__mobile .navbar-nav .nav-link i {
     color: white !important;
   }
   .navbar__mobile .logo {
