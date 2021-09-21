@@ -190,12 +190,17 @@ button span{
 .slick-next, .slick-prev{
     width: 10px;
     height: 100%;
+    // left: 5px;
+    z-index: 99;
     &::after, &::before{
         color: $green !important;
         border-radius: 0 !important;
     }
 }
-
+.slick-next{
+    // right: 5px;
+    // left: auto;
+}
 @media (max-width: 600px) {
     .slick-arrow{
         display: none !important;
@@ -338,7 +343,6 @@ button span{
     color: rgb(27, 27, 27);
     font-size: 1em !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 .services{
@@ -409,7 +413,7 @@ button span{
     border-radius: 50%;
     border: 1px solid lightgray;
     background-color: #fff;
-    height: 150px;
+    height: 90px;
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -418,7 +422,7 @@ button span{
     position: relative;
     transition: all .3s;
     img{
-        width: 100px;
+        max-width: 70px;
     }
     &:hover{
         box-shadow: 3px 9px 15px rgb(87, 87, 87);

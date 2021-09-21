@@ -69,7 +69,7 @@ $(document).ready(function(){
           ]
     });
     $('.mark_presence').slick({
-        slidesToShow: 6,
+        slidesToShow: 9,
         slidesToScroll: 1,
         autoplay: true,
         infinite: true,
@@ -77,7 +77,7 @@ $(document).ready(function(){
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 6,
+                slidesToShow: 9,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true

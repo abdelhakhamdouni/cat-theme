@@ -204,6 +204,7 @@ button span {
 .slick-next, .slick-prev {
   width: 10px;
   height: 100%;
+  z-index: 99;
 }
 
 .slick-next::after, .slick-next::before, .slick-prev::after, .slick-prev::before {
@@ -477,7 +478,7 @@ button span {
   border-radius: 50%;
   border: 1px solid lightgray;
   background-color: #fff;
-  height: 150px;
+  height: 90px;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -496,7 +497,7 @@ button span {
 }
 
 .presence img {
-  width: 100px;
+  max-width: 70px;
 }
 
 .presence:hover {
