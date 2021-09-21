@@ -39,6 +39,10 @@ ul span, ul i, li span, li i {
   font-size: .7em;
 }
 
+.container {
+  overflow: hidden;
+}
+
 .section.container {
   padding: 2em 1em 4em 1em;
 }
