@@ -605,4 +605,8 @@ button span {
   position: absolute;
   bottom: 0;
 }
+
+.container {
+  padding: 1em;
+}
 /*# sourceMappingURL=style.css.map */
