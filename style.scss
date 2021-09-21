@@ -544,13 +544,15 @@ button span{
 
 .footer{
     height: auto;
+    padding-bottom: 0;
     .section{
         min-height: unset;
         padding: 3em;
         position: relative;
+        padding-bottom: 1em;
         .footer-copywrite{
-            position: absolute;
-            bottom: 0;
+            margin-top: 3em;
+            margin-bottom: 0;
         }
     }
     .navigation{
