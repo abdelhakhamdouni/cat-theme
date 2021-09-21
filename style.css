@@ -39,6 +39,10 @@ ul span, ul i, li span, li i {
   font-size: .7em;
 }
 
+.section.container {
+  padding: 2em 1em 4em 1em;
+}
+
 /* Carousel styling */
 #introCarousel,
 .carousel-inner,
@@ -169,11 +173,6 @@ button span {
   border-radius: 0 !important;
   color: white !important;
   background-color: #65e007 !important;
-}
-
-.section {
-  min-height: 100vh;
-  padding: 5em 0;
 }
 
 .section .section__title {
@@ -536,29 +535,62 @@ button span {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 4em;
 }
 
 .adhesion {
-  -webkit-box-shadow: 0 0 15px lightgray;
-          box-shadow: 0 0 15px lightgray;
+  border: 1px solid #2a824a;
   padding: 2em;
   position: relative;
-  overflow: hidden;
   margin: 1em;
   width: 30%;
   height: 100% !important;
+  background-color: white;
+}
+
+.adhesion::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2a824a;
+  z-index: -1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.adhesion:hover {
+  background-color: #c4e7bf;
+}
+
+.adhesion:hover::after {
+  top: -1em;
+  left: 1em;
+}
+
+.adhesion:hover .content .image {
+  opacity: .3;
 }
 
 .adhesion .content .image {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: .15;
-  z-index: -1;
+  opacity: .1;
+  z-index: 1;
+  -webkit-transform: scale(1.1) translate(2em, 1em);
+          transform: scale(1.1) translate(2em, 1em);
 }
 
 .adhesion .content .image span {
   font-size: 12em;
+}
+
+.adhesion .content .content-body {
+  position: relative;
+  z-index: 2;
 }
 
 .adhesion .content .content-body ul li {
@@ -570,8 +602,10 @@ button span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
   font-weight: 600;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -588,7 +622,8 @@ button span {
 .adhesion .content .content-body ul li:hover a {
   -webkit-transform: translateX(5px) scale(1.1);
           transform: translateX(5px) scale(1.1);
-  color: #187e18 !important;
+  color: black !important;
+  font-weight: 600;
 }
 
 @media (max-width: 990px) {
@@ -597,7 +632,26 @@ button span {
   }
 }
 
+.contact-wrapper {
+  background-color: lightgray;
+}
+
+.contact-wrapper .contact form {
+  background-color: #fff;
+  padding: 2em;
+}
+
+.contact-wrapper .contact .form-outline .form-control {
+  overflow: hidden;
+}
+
+.footer {
+  height: auto;
+}
+
 .footer .section {
+  min-height: unset;
+  padding: 3em;
   position: relative;
 }
 
@@ -606,7 +660,7 @@ button span {
   bottom: 0;
 }
 
-.container {
-  padding: 1em;
+.footer .navigation li:hover a {
+  color: yellowgreen !important;
 }
 /*# sourceMappingURL=style.css.map */
