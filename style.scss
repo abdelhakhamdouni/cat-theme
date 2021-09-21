@@ -122,6 +122,7 @@ video{
     overflow: hidden;
     background-image: url('./article.jpg');
     background-size: cover;
+    background-position: bottom;
     .mask{
         background-color: rgba(0, 0, 0, 0.719) !important;
     }
@@ -422,7 +423,7 @@ button span{
     position: relative;
     transition: all .3s;
     img{
-        max-width: 70px;
+        max-width: 65px;
     }
     &:hover{
         box-shadow: 3px 9px 15px rgb(87, 87, 87);

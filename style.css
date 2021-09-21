@@ -137,6 +137,7 @@ video {
   overflow: hidden;
   background-image: url("./article.jpg");
   background-size: cover;
+  background-position: bottom;
 }
 
 .carousel .mask {
@@ -497,7 +498,7 @@ button span {
 }
 
 .presence img {
-  max-width: 70px;
+  max-width: 65px;
 }
 
 .presence:hover {
