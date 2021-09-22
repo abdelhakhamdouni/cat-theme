@@ -33,6 +33,11 @@ ul, li {
     font-size: .7em;
 }
 .container{overflow: hidden;}
+.navbar{
+    .container{
+        overflow: unset;
+    }
+}
 .section{
     &.container{
         padding: 2em 1em 4em 1em;
@@ -422,7 +427,7 @@ button span{
 }
 
 .apropos{
-    font-size: .8em;
+    font-size: 1em;
     line-height: 2em;
     li{
         font-weight: 600;
@@ -602,4 +607,53 @@ button span{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+.mark_metatdata{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 320px;
+    background-color: #fff;
+    color: black !important;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.presence{
+    position: relative;
+    &:hover{
+        .mark_metatdata{
+            display: flex;
+            z-index: 99999;
+        }
+    }
+}
+
+// .valeur{
+//     margin: 1em 0;
+//     h5{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         background-color: rgb(164, 243, 118);
+//         font-size: 1.2em;
+//         position: relative;
+//         padding: 1em;
+//         &:hover{
+//             & + p{
+//                 height: 100px;
+//             }
+//         }
+//     }
+//     p{
+//         padding: 0 1em 0 3em;
+//         background-color: cornflowerblue;
+//         align-items: center;
+//         height: 0px;
+//         overflow: hidden;
+//         transition: all .3s;
+//     }
+// }

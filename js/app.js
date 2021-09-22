@@ -45,10 +45,3 @@ document.querySelectorAll('.dropdown-menu').forEach(ele =>{
     document.querySelector('.navbar__mobile').classList.toggle('navbar-show')
 })
 
-window.addEventListener('scroll', function(){
-  if (this.scrollY > 100) {
-    console.log('ok')
-    // document.querySelector('.navbar__manu_open').style.display = "block"
-    // document.querySelector('.navbar__manu_open').style.position = "fixed"
-  }
-})
