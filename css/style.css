@@ -286,7 +286,7 @@ button span {
   right: 0;
   bottom: 0;
   height: 80px;
-  background-color: #1b60bb;
+  background-color: #2a824a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,7 +315,7 @@ button span {
           transform-origin: left top;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
-  background-color: #1b60bb;
+  background-color: #2a824a;
   z-index: 4;
 }
 
@@ -360,7 +360,9 @@ button span {
 
 @media (max-width: 990px) {
   .navbar__manu_open, .navbar__manu_close {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: absolute;
     left: 1em;
     top: 1em;
@@ -369,6 +371,17 @@ button span {
     border: none;
     font-size: 1.2em;
     cursor: pointer;
+    background-color: #636363;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: .3em;
+  }
+  .navbar__manu_open span, .navbar__manu_close span {
+    margin: unset !important;
   }
   .navbar__manu_close {
     right: 1em;
@@ -515,7 +528,7 @@ button span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1em;
+  margin: .5em;
   -webkit-box-shadow: 3px 5px 10px #8b8b8b;
           box-shadow: 3px 5px 10px #8b8b8b;
   position: relative;
@@ -742,5 +755,17 @@ button span {
   display: -ms-flexbox;
   display: flex;
   z-index: 99999;
+}
+
+.apropos-cat img {
+  height: 300px;
+  width: auto;
+}
+
+@media (max-width: 990px) {
+  .apropos-cat img {
+    width: 100%;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

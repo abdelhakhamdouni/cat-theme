@@ -266,7 +266,7 @@ button span{
         right: 0;
         bottom: 0;
         height: 80px;
-        background-color: #1b60bb;
+        background-color: $green;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -282,7 +282,7 @@ button span{
             width: 110%;
             transform-origin: left top;
             transform: rotate(-3deg);
-            background-color: #1b60bb;
+            background-color: $green;
             z-index: 4;
         }
         h1{
@@ -321,10 +321,11 @@ button span{
     border: none;
     font-size: 1.2em;
     cursor: pointer;
+    
 }
 @media (max-width: 990px) {
     .navbar__manu_open, .navbar__manu_close{
-        display: block;
+        display: flex;
         position: absolute;
         left: 1em;
         top: 1em;
@@ -333,6 +334,13 @@ button span{
         border: none;
         font-size: 1.2em;
         cursor: pointer;
+        background-color: rgb(99, 99, 99);
+        justify-content: center;
+        align-items: center;
+        padding: .3em;
+        span{
+            margin: unset !important;
+        }
     }
     .navbar__manu_close{
         right: 1em;
@@ -446,7 +454,7 @@ button span{
     display: flex !important;
     justify-content: center;
     align-items: center;
-    margin: 1em;
+    margin: .5em;
     box-shadow: 3px 5px 10px rgb(139, 139, 139);
     position: relative;
     transition: all .3s;
@@ -657,3 +665,23 @@ button span{
 //         transition: all .3s;
 //     }
 // }
+
+.apropos-cat{
+    img{
+
+        height: 300px;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .apropos-cat{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    
+    }
+    
+}
