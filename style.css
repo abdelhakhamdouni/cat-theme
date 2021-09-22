@@ -56,12 +56,19 @@ ul span, ul i, li span, li i {
 }
 
 h1 {
-  font-size: clamp(2em, 5vh, 10em) !important;
+  font-size: clamp(1.5em, 2vh, 10em) !important;
 }
 
 /* Height for devices larger than 576px */
 #introCarousel {
   height: calc(100vh - 100px);
+}
+
+@media (max-width: 990px) {
+  /* Height for devices larger than 576px */
+  #introCarousel {
+    height: 100vh;
+  }
 }
 
 span {
@@ -100,15 +107,20 @@ video {
 }
 
 .mask p {
-  font-size: clamp(1em, 2vh, 3em);
+  font-size: clamp(0.9em, 1vh, 3em);
   margin: .5em 0;
-  line-height: 1em;
+  line-height: 1.8em;
   color: white;
 }
 
 @media (min-width: 990px) {
+  .mask h1 {
+    width: 75%;
+    font-weight: 800;
+  }
   .mask p {
     width: 65%;
+    line-height: 2em;
   }
 }
 
@@ -255,7 +267,7 @@ button span {
 }
 
 .news__content:hover > .news-overlay {
-  height: 65%;
+  height: 85%;
 }
 
 .news__content:hover > .news-overlay h1, .news__content:hover > .news-overlay p, .news__content:hover > .news-overlay button, .news__content:hover > .news-overlay .date {
@@ -270,7 +282,7 @@ button span {
   right: 0;
   bottom: 0;
   height: 80px;
-  background-color: white;
+  background-color: #1b60bb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +297,7 @@ button span {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 1em;
-  color: #1f1f1f;
+  color: white;
 }
 
 .news__content .news-overlay::after {
@@ -299,7 +311,7 @@ button span {
           transform-origin: left top;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
-  background-color: white;
+  background-color: #1b60bb;
   z-index: 4;
 }
 
@@ -319,7 +331,7 @@ button span {
 .news__content .news-overlay .metadata .date {
   font-size: .7em;
   font-weight: 300;
-  color: #2e2e2e;
+  color: #f3f3f3;
 }
 
 .news__content .news-overlay button {
@@ -332,6 +344,14 @@ button span {
 
 .navbar__manu_open, .navbar__manu_close {
   display: none;
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  z-index: 9999;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
 @media (max-width: 990px) {
@@ -621,6 +641,7 @@ button span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: clamp(0.8em, 1vh, 1em);
 }
 
 .adhesion .content .content-body ul li a span {
@@ -672,5 +693,20 @@ button span {
 
 .footer .navigation li:hover a {
   color: yellowgreen !important;
+}
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
