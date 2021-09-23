@@ -1,4 +1,4 @@
-fetch("../valeurs.json").then(data => data.json())
+fetch("./valeurs.json").then(data => data.json())
     .then(dataJSON => {
         let valeur = '<div class="accordion" id="accordionExample">'
         dataJSON.forEach((d, index) => {
@@ -36,7 +36,7 @@ fetch("../valeurs.json").then(data => data.json())
         document.querySelector('.valeurs').innerHTML = valeur
     });
 
-fetch("../engagements.json").then(data => data.json())
+fetch("./engagements.json").then(data => data.json())
     .then(dataJSON => {
         let _valeur = '<div class="accordion" id="accordionExample2">'
         dataJSON.forEach((d, index) => {
