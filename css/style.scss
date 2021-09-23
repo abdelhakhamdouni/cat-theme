@@ -396,6 +396,7 @@ button span{
     background-color: #fff;
     border-radius: 5px;
     margin: 2em;
+    cursor: pointer;
     &:hover{
         box-shadow: 0 0 20px #999999;
         .image{
@@ -681,7 +682,62 @@ button span{
             width: 100%;
             height: auto;
         }
-    
     }
-    
+}
+
+.main{
+    min-height: 100vh;
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+    .card-image{
+        position: absolute;
+        padding: 1em;
+        z-index: 1;
+        width: 30%;
+        height: 30%;
+        img{
+            object-fit: cover;
+            width: 100%;
+            opacity: .3;
+            object-position: center;
+        }
+    }
+    .card-body{
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.hide{
+    animation: fade .6s linear forwards;
+}
+
+
+@keyframes fade {
+    99% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        position: absolute;
+        left: -1000px;
+        top: -1000px;
+        display: none;
+        opacity: 0;
+    }
+}
+
+.page_title{
+    font-size: clamp(2em, 3vh, 7em) !important;
+    text-align: center;
+    padding: 1em 1em;
+    background-image: linear-gradient(to right, green, yellow);
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    line-height: 2.2em;
 }

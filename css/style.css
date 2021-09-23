@@ -451,6 +451,7 @@ button span {
   background-color: #fff;
   border-radius: 5px;
   margin: 2em;
+  cursor: pointer;
 }
 
 .service:hover {
@@ -767,5 +768,82 @@ button span {
     width: 100%;
     height: auto;
   }
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .card-image {
+  position: absolute;
+  padding: 1em;
+  z-index: 1;
+  width: 30%;
+  height: 30%;
+}
+
+.card .card-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  opacity: .3;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.card .card-body {
+  position: relative;
+  z-index: 2;
+}
+
+.hide {
+  -webkit-animation: fade .6s linear forwards;
+          animation: fade .6s linear forwards;
+}
+
+@-webkit-keyframes fade {
+  99% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    position: absolute;
+    left: -1000px;
+    top: -1000px;
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  99% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    position: absolute;
+    left: -1000px;
+    top: -1000px;
+    display: none;
+    opacity: 0;
+  }
+}
+
+.page_title {
+  font-size: clamp(2em, 3vh, 7em) !important;
+  text-align: center;
+  padding: 1em 1em;
+  background-image: -webkit-gradient(linear, left top, right top, from(green), to(yellow));
+  background-image: linear-gradient(to right, green, yellow);
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  line-height: 2.2em;
 }
 /*# sourceMappingURL=style.css.map */
